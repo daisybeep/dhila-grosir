@@ -428,20 +428,23 @@ nav {
     align-items: center;
 }
 
-.about-swatch {
-    width: 520px;
-    height: 480px;
+@media (max-width: 768px) {
+  .about-swatch {
+    width: 100%;
+    height: 400px;
     overflow: hidden;
-    border-radius: 12px;
-    position: relative;
-}
+  }
 
-.about-swatch img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center;
+  .about-swatch img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 }
 
 .about-swatch span {
